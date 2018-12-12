@@ -1,16 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//load foundation
+impoty Main from './components/Main.jsx';
 require('style!css!foundation-sites/dist/css/foundation.min.css');
-// $(document).foundation();
-
-//app css
 require('style!css!sass!applicationStyles');
+require('./redux-example.jsx');
 
 ReactDOM.render(
-  <p>lol</p>,
+  <Main />,
   document.getElementById('app')
 );
 
-require('./redux-example.jsx');
-// require('./redux-ex.js');
